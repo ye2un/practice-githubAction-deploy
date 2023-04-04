@@ -7,6 +7,7 @@
 
 name: Java CI with Gradle
 
+
 on:
   push:
     branches: [ "main" ]
@@ -15,6 +16,9 @@ on:
 
 permissions:
   contents: read
+  
+env: 
+  S3_BUCKET_NAME: be-45-ye2un
 
 jobs:
   build:
